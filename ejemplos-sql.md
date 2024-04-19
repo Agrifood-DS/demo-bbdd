@@ -2,6 +2,10 @@
 
 # Ejemplos SQL
 
+
+[Ejemplos de SQL](https://www.w3schools.com/mysql/mysql_sql.asp) 
+
+
 ```
 SELECT productID, ProductName, c.CategoryId, c.CategoryName, Unit, Price, s.SupplierName, s.ContactName
 FROM Categories c, Products p, Suppliers s
