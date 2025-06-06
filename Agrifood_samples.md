@@ -46,7 +46,7 @@ SELECT s.name,
   FROM weatherStation s, weatherData d
   GROUP BY s.name;
 
-#Ejemplo de LEFT JOIN: mostrar todos los usuarios con sus estaciones (si tienen)
+# Ejemplo de LEFT JOIN: mostrar todos los usuarios con sus estaciones (si tienen)
 SELECT 
     u.name AS user_name,
     u.email,
@@ -60,7 +60,7 @@ LEFT JOIN
     weatherStation s ON us.station_id = s.id;
 
 
-#Ejemplo RIGHT JOIN: mostrar todas las estaciones con sus usuarios (si tienen)
+# Ejemplo RIGHT JOIN: mostrar todas las estaciones con sus usuarios (si tienen)
 SELECT 
     s.name AS station_name,
     s.province,
@@ -73,7 +73,7 @@ RIGHT JOIN
 RIGHT JOIN 
     User u ON us.user_id = u.id;
 
-#Ejemplo INNER JOIN
+# Ejemplo INNER JOIN
 SELECT 
     u.name AS user_name,
     u.email,
